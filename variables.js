@@ -73,10 +73,24 @@ console.log(totalnum)
 
 // funciones 
 
-var nombre = luis, edad = 20;
+var nombre = "luis", edad = 20;
 
-function imprimiredad(){
-    console.log(`${nombre} tiene ${edad} años`)
+function imprimiredad(n,e){
+    console.log(`${n} tiene ${e} años`)
 }
 
-imprimiredad();
+imprimiredad(nombre , edad);
+
+
+// ---------
+
+var nombre = "luis"
+
+function imprimirenmayus(n){
+    n = n.toUpperCase()
+    console.log(n)
+}
+
+imprimirenmayus(nombre)
+
+console.log(" variable original y sin afectar "+ nombre)
