@@ -71,7 +71,7 @@ var totalnum = parseFloat(vinostr)
 
 console.log(totalnum)
 
-// funciones 
+// funciones
 
 var nombre = "luis", edad = 20;
 
@@ -94,3 +94,6 @@ function imprimirenmayus(n){
 imprimirenmayus(nombre)
 
 console.log(" variable original y sin afectar "+ nombre)
+
+// ---- objetos
+
