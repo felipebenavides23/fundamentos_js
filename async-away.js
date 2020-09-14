@@ -19,21 +19,23 @@ function onerror (id) {
     console.log(`ocurrio un problema al llamar el personaje  ${id}`)
 }
 
-
+async function obtenerpersonajes() {
 var ids= [1,2,3,4,5,6,7]
  
 var promesas = ids.map(id=> escogerpersonaje(id))
-
+try{
+var personajes = await Promise.all(promesas)
+console.log(personajes)
+} catch(id){
+    onerror(id)
+}
     Promise
     .all(promesas)
-    .then(personajes => {
-        for(var i = 0 ; i < ids.length;i++)
-        {
-             console.table(personajes[i].name)
-            }})
+    .then(personajes => console.table(personajes))
     .catch(onerror)
+}
 
-
+obtenerpersonajes()
 
 
 
