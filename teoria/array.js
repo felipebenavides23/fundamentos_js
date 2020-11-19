@@ -83,4 +83,4 @@ const reducer = (acum, persona) => {
 
 var totaldealtura = personas.reduce(reducer ,0)
 
-console.log (totaldealtura)
+console.log (totaldealtura +'jjjjjjjjjjjjjj')

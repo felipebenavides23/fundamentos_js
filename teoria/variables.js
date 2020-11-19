@@ -98,9 +98,11 @@ console.log(" variable original y sin afectar "+ nombre)
 // ---- objetos
 
 function calculofecha(){
+    
         for(var i =0;i<25;i++){
+            let d = new Date(2019,11)  
             var a = 7 * i
-    let d = new Date(2000,06,25)
+            
     d.setDate(d.getDate() + a)         
     console.log (d.toISOString().substr(0,10))
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const felipe = {
+        nombre : 'felipe',
+        apellido: 'castillo'
+    }
+    const saludar =function(){
+        console.log(`hola , como estas ${this.nombre}`);
+
+    }
+
+    const saludarfelipe = saludar.call(felipe)
+
+    function conteo (){
+    setTimeout(() => console.log(1), 1000)
+     setTimeout(() => console.log(2), 300)
+     setTimeout(() => console.log(3), 0)
+     console.log(4)}
+
+     conteo()
+</script>
+</body>
+</html>
